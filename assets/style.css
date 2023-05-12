@@ -1,0 +1,117 @@
+body{
+    position: relative;
+   background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+display: flex;
+border-radius: 10px;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 60px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.h1 h1{
+    color: #1D9A2B;
+    margin-left: 15px;
+}
+.header button{
+    width: 170px;
+    height: 35px;
+    margin-right: 15px;
+    margin-top: 30px;
+    border-style:none;
+    border-radius: 5px;
+    color: white;
+    background: #1D9A2B;
+    box-shadow: 3px 3px 3px 3px  rgb(215, 215, 215);
+}
+span{
+    display: none;
+    color: red;
+    margin-top: 4px;
+}
+#form{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.formulario{
+    height: 650px;
+    border: 1px solid rgb(215, 215, 215);
+    background-color: white;
+}
+#name, #surname, #email, #number, #password, #password2{
+    width: 250px;
+    height: 25px;
+    padding: 5px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(246, 242, 242);
+    border-radius: 9px;
+    box-shadow: 3px 3px 3px 3px  rgb(215, 215, 215);
+}
+label{
+    margin-top: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+div{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    padding: 10px;
+    width: 500px;
+    height: 90px;
+    border: 2px solid #1D9A2B;
+}
+.inputs{
+    display: flex;
+    flex-direction: row;
+}
+.article img{
+    margin-top: 70px;
+    height: 400px;
+}
+.article{
+    width: 600px;
+    height: 650px;
+    position: relative;
+    background-color: rgb(242, 230, 215);
+}
+.article::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 50px solid transparent;
+    border-bottom: 50px solid #1D9A2B;
+    border-left: 50px solid #1D9A2B;
+}
+button{
+    width: 500px;
+    height: 30px;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    color: #1D9A2B;
+    background: #1D9A2B;
+    box-shadow: 3px 3px 3px 3px  rgb(215, 215, 215);
+}
+button:hover{
+    transition: 0.5s;
+    background: white;
+    color: #1D9A2B;
+    border: 2px solid #1D9A2B;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <div class="header">
+                <div class="h1">
+                    <h1>Register</h1>
+                </div>
+                <div class="btn">
+                    <button>Enter</button>
+                </div>
+            </div><!-- class header-->
+            <form id="form">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="name" placeholder="first name" id="name" class="required" oninput="nameValidate()">
+                    <span class="span-required">your name should at least have 4 characters</span>
+                </div>
+                <div>
+                    <label for="surname">Surname</label>
+                    <input type="name" placeholder="last name" id="surname" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="name@gmail.com" id="email" class="required" oninput="emailValidate()">
+                    <span class="span-required">write a valid email</span>
+                </div>
+                <div>
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="number" placeholder="(xx)xxx xxx xx" id="number" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="8 characters" id="password" class="required" oninput="passwordValidate()">
+                    <span class="span-required">your password should at least have 8 characters</span>
+                </div>
+                <div>
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" placeholder="same password" id="password2" class="required" oninput="password2Validate()">
+                    <span class="span-required">your password must be the same</span>
+                </div>
+                <div class="textarea">
+                    <h2>About You</h2>
+                    <textarea placeholder="Tell us about you"></textarea>
+                </div>
+            </form><!-- id form-->
+            <div class="options">
+                <h2>Gender:</h2>
+                <div class="inputs">
+                    <p><input type="radio">Female</p>
+                    <p><input type="radio">Male</p>
+                    <p><input type="radio">Others</p>
+                    <p><input type="radio">Don't metion</p>
+                </div>
+            </div><!--classoptions-->
+            <button type="submit">Submit</button>
+        </div><!--closing formulario-->
+        <div class="article">
+            <img src="assets/images/undraw_join_re_w1lh (1).svg" alt="image">
+        </div><!--closing article-->
+    </div><!--class container-->
+    <script src="assets/index.js"></script>
+</body>
+</html>
